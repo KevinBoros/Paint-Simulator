@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Editor</title>
+  <link rel="stylesheet" href="6_1088_BOROS_KEVIN_CRISTIAN.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>SVG Editor</h1>
+    <div class="toolbar">
+        <button id="line" class="btn btn-primary">Linie</button>
+        <button id="ellipse" class="btn btn-primary">Elipsă</button>
+        <button id="rect" class="btn btn-primary">Dreptunghi</button>
+        <button id="circle" class="btn btn-primary">Cerc</button>
+        <button id="square" class="btn btn-primary">Pătrat</button>
+        <button id="reset" class="btn btn-secondary">Selectare</button>
+        <button id="undo" class="btn btn-warning">Undo</button>
+        <input type="color" id="strokeColor" value="#000000" title="Culoare linie">
+        <input type="number" id="strokeWidth" value="2" min="1" max="10" title="Grosime linie">
+        <input type="color" id="fillColor" value="#ffffff" title="Culoare fundal">
+        <button id="drawPath" class="btn btn-success">Desenare</button>
+    </div>      
+    <svg id="canvas" width="800" height="600" style="border:1px solid black; background-color: white;"></svg>
+<div>
+  <button id="exportPng" class="btn btn-info">Export PNG</button>
+  <button id="exportSvg" class="btn btn-info">Export SVG</button>
+</div>
+  </div>
+  <script src="6_1088_BOROS_KEVIN_CRISTIAN.js"></script>
+</body>
+</html>
